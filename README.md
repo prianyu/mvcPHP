@@ -46,7 +46,7 @@
 
  *参数说明：q为配置的get变量，PATHINFO_VAR，PATHINFO_DIL为路由分隔符
 
-以上的访问方法均可以访问app/admin下的userCotrol里面的index方法。
+以上的访问方法均可以访问app/admin下的userControl里面的index方法。
 其中，amdin为模块名，user为控制器名称前缀，index为控制器方法。
 
 ##配置文件
