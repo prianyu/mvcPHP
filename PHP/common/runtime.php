@@ -1,11 +1,11 @@
-<?php 
+<?php
 	function runtime(){
 		$files=require_once PHP_PATH.'/common/files.php';
 		foreach ($files as $v) {
 			if(is_file($v)){
 				require $v;
 			}
-		} 
+		}
 		$data='';
 		mkdirs();
 		//框架常规配置项
@@ -30,7 +30,7 @@
 			<?php
 				class indexControl extends Control{
 					function index(){
-						echo "欢迎使用自制框架！";
+						echo "<div style='margin-top:100px;font-size: 100px;text-align:center;'>欢迎使用自制框架！</div>";
 					}
 				}
 			?>
@@ -52,8 +52,8 @@ str;
 		if(!is_dir(LOG_PATH))mkdir(LOG_PATH,0777,true);
 		if(!is_dir(CONFIG_PATH))mkdir(CONFIG_PATH,0777,true);
 		if(!is_dir(TEMPLATE_PATH))mkdir(TEMPLATE_PATH,0777,true);
-		if(!is_dir(TPL_PATH))mkdir(TPL_PATH,0777,true);	
+		if(!is_dir(TPL_PATH))mkdir(TPL_PATH,0777,true);
 		if(!is_dir(MODULE_PATH))mkdir(MODULE_PATH,0777,true);
-			
+
 	}
  ?>
